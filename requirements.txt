@@ -1,0 +1,9 @@
+datasets
+numpy
+opencv-python
+pillow
+pytesseract
+seqeval
+torch
+tqdm
+transformers
