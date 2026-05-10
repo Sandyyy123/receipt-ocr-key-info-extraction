@@ -10,13 +10,13 @@ Kaggle mirror by user `urbikn`:
 Kaggle CLI auth lives at `~/.kaggle/kaggle.json` (already configured for this user). To download into this folder:
 
 ```
-cd /root/AI/liora_projects/12_sroie_invoice/data
+cd /root/AI/project_root/data
 kaggle datasets download -d urbikn/sroie-datasetv2
 unzip -q sroie-datasetv2.zip -d ./SROIE2019
 rm sroie-datasetv2.zip
 ```
 
-The Phase 1 scaffold does NOT run the download. The main session will execute the command above before running `src/model_baseline.py` or `src/model_advanced.py`.
+The Initial implementation does NOT run the download. The main session will execute the command above before running `src/model_baseline.py` or `src/model_advanced.py`.
 
 ## Expected layout after extraction
 ```
@@ -43,4 +43,4 @@ Task 3 (Key Information Extraction) uses exact-match F1 per field, micro-average
 
 ## Notes
 - Some receipts in the public mirror have minor annotation gaps in the `address` field (multi-line vs single-line). Both `model_baseline.py` and `model_advanced.py` normalize to single-line at evaluation time.
-- The original ICDAR 2019 challenge site (`rrc.cvc.uab.es/?ch=13`) requires registration; the Kaggle mirror is the practical source for reproducible scaffolding.
+- The original ICDAR 2019 challenge site (`rrc.cvc.uab.es/?ch=13`) requires registration; the Kaggle mirror is the practical source for reproducible implementation.

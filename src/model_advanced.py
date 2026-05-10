@@ -4,7 +4,7 @@ Advanced: LayoutLMv3 token-classification fine-tune for the four key fields
 (company, date, address, total). BIO tagging over OCR words plus their
 normalized bounding boxes.
 
-Phase 1 scaffold. NOT EXECUTED. Run from main session with:
+Initial implementation. NOT EXECUTED. Run from main session with:
     python src/model_advanced.py
 
 Hardware notes
@@ -13,10 +13,10 @@ Hardware notes
   at batch size 4, sequence length 512, 8 epochs.
 - Unsloth (https://github.com/unslothai/unsloth) offers QLoRA support that
   reduces VRAM by ~60% with comparable F1 - useful when the GPU is shared
-  with other Liora projects. Drop in `FastLanguageModel.from_pretrained(...)`
+  with other Portfolio projects. Drop in `FastLanguageModel.from_pretrained(...)`
   in place of the HuggingFace `from_pretrained` call.
 
-Author: Sandeep Grover, Liora MLE Programme, Cohort 6973.
+Author: Sandeep Grover, Independent Research.
 """
 from __future__ import annotations
 

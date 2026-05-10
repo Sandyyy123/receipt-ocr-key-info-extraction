@@ -3,10 +3,10 @@ Project 12 - SROIE Receipt OCR + KIE
 Baseline: Tesseract OCR plus rule-based extractors for the four key fields
 (company, date, address, total). Per-field exact-match F1, ICDAR 2019 Task 3 protocol.
 
-Phase 1 scaffold. NOT EXECUTED. Run from main session with:
+Initial implementation. NOT EXECUTED. Run from main session with:
     python src/model_baseline.py
 
-Author: Sandeep Grover, Liora MLE Programme, Cohort 6973.
+Author: Sandeep Grover, Independent Research.
 """
 from __future__ import annotations
 

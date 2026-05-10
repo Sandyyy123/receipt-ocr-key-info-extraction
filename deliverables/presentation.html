@@ -93,7 +93,7 @@
     <div class="item"><span class="lbl">Baseline</span><span class="val">Tesseract OCR + regex</span></div>
     <div class="item"><span class="lbl">Advanced</span><span class="val">LayoutLMv3-base fine-tune</span></div>
     <div class="item"><span class="lbl">Metric</span><span class="val">Per-field exact-match F1</span></div>
-    <div class="item"><span class="lbl">Phase</span><span class="val">1 (code-only scaffold)</span></div>
+    <div class="item"><span class="lbl">Phase</span><span class="val">1 (code-only implementation)</span></div>
   </div>
 </section>
 
@@ -103,7 +103,7 @@
   <div class="box box-blue">
     <strong>Business framing.</strong> At 4-6 minutes of manual data entry per invoice, every percentage point of micro-F1 lifted above the rule-based baseline saves approximately 30-50 hours per year on a 50,000-invoice queue. A 5-point lift from LayoutLMv3 over Tesseract+regex pays back the GPU and engineering investment within months.
   </div>
-  <p>The same architecture transfers directly to German Rechnungen and Lieferscheine after a small fine-tune on a domain corpus, which is the planned Phase 2 extension.</p>
+  <p>The same architecture transfers directly to German Rechnungen and Lieferscheine after a small fine-tune on a domain corpus, which is the planned v1.0 extension.</p>
 </section>
 
 <section id="data">
@@ -135,7 +135,7 @@
     <li>Best checkpoint by val seqeval F1 reloaded for test evaluation.</li>
   </ol>
   <div class="box box-purple">
-    <strong>Unsloth alternative.</strong> For shared-GPU scenarios, Unsloth provides a drop-in QLoRA path that reduces VRAM by ~60% with comparable F1. The scaffold documents the substitution as a single import change.
+    <strong>Unsloth alternative.</strong> For shared-GPU scenarios, Unsloth provides a drop-in QLoRA path that reduces VRAM by ~60% with comparable F1. The implementation documents the substitution as a single import change.
   </div>
 </section>
 
@@ -189,8 +189,8 @@
 
 <section id="conclusion">
   <h2>Conclusion</h2>
-  <p>This Phase 1 scaffold delivers two fully-specified, runnable pipelines for SROIE Task 3 under a shared evaluation harness. Once the test-split numbers are populated, per-field F1 deltas, CPU-versus-GPU latency, and training cost are all accessible from the same JSON files, and the cost-quality trade-off can be presented to a non-technical sponsor in a single dashboard view.</p>
-  <p>The same scaffold serves as a reference template for the next four document-intelligence projects in the Liora Phase 1 portfolio.</p>
+  <p>This Initial implementation delivers two fully-specified, runnable pipelines for SROIE Task 3 under a shared evaluation harness. Once the test-split numbers are populated, per-field F1 deltas, CPU-versus-GPU latency, and training cost are all accessible from the same JSON files, and the cost-quality trade-off can be presented to a non-technical sponsor in a single dashboard view.</p>
+  <p>The same implementation serves as a reference template for the next four document-intelligence projects in the Project layout
 </section>
 
 <section id="refs">
@@ -206,7 +206,7 @@
 </section>
 
 <footer>
-  Project 12 of the Liora MLE Phase 1 portfolio. Cohort 6973. Code-only scaffold; numerical results pending main-session execution of <code>src/model_baseline.py</code> and <code>src/model_advanced.py</code>.
+  Project 12 of the Portfolio MLE v1.0 portfolio. . Code-only implementation; numerical results pending main-session execution of <code>src/model_baseline.py</code> and <code>src/model_advanced.py</code>.
 </footer>
 </main>
 </body>
