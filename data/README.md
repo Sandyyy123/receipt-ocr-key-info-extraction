@@ -10,7 +10,7 @@ Kaggle mirror by user `urbikn`:
 Kaggle CLI auth lives at `~/.kaggle/kaggle.json` (already configured for this user). To download into this folder:
 
 ```
-cd /root/AI/project_root/data
+cd data/
 kaggle datasets download -d urbikn/sroie-datasetv2
 unzip -q sroie-datasetv2.zip -d ./SROIE2019
 rm sroie-datasetv2.zip
