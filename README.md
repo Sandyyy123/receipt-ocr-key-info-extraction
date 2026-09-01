@@ -1,3 +1,7 @@
+> **⚠️ Proprietary — All Rights Reserved.** © 2026 Sandeep Grover. This repository is licensed to Sandeep Grover and may **not** be used, run, copied, modified, distributed, or used to train models without prior written permission. Public visibility does not grant a license. See [LICENSE](LICENSE).
+
+---
+
 ![Python](https://img.shields.io/badge/Python-3.10%2B-blue) ![NLP](https://img.shields.io/badge/NLP-NER-purple) ![License](https://img.shields.io/badge/license-CC%20BY--NC%204.0-lightgrey)
 
 # SROIE Receipt OCR + Key Information Extraction
